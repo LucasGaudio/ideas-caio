@@ -57,15 +57,14 @@ export default function CreateIdea() {
   return (
     <main className="min-h-screen bg-slate-50 px-4 py-8 sm:px-8">
       <div className="mx-auto w-full max-w-5xl rounded-3xl bg-white p-6 shadow-sm sm:p-8">
-        <h1 className="text-3xl font-semibold text-slate-900">Create New Idea</h1>
+        <h1 className="text-3xl font-semibold text-slate-900">Criar uma nova ideia</h1>
         <p className="mt-2 text-sm text-slate-500">
-          Capture your idea exactly as you write it - the system records submissions verbatim.
+          Capture sua ideia exatamente como você a escreve - o sistema grava as submissões na íntegra.
         </p>
 
         <div className="mt-5 rounded-2xl bg-violet-100 px-5 py-4 text-sm font-medium leading-relaxed text-violet-900">
-          Important: All text you enter will be recorded verbatim and shown exactly as submitted
-          on the confirmation page and in idea listings. Please avoid including sensitive personal
-          data.
+          Importante: Todo o texto que você inserir será gravado na íntegra e exibido exatamente como foi enviado
+          na página de confirmação e nas listas de ideias. Evite incluir dados pessoais sensíveis.
         </div>
 
         <form className="mt-7 space-y-6" onSubmit={handleSubmit}>
