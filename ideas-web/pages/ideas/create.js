@@ -19,7 +19,7 @@ function FieldLabel({ title, optional }) {
 
 export default function CreateIdea() {
   const router = useRouter();
-  const [isAnonymous, setIsAnonymous] = useState(true);
+  const [isAnonymous, setIsAnonymous] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [form, setForm] = useState({
     re_author: '',
