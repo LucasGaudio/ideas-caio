@@ -6,13 +6,10 @@ const inputBaseClasses =
   'w-full rounded-2xl border border-slate-200 bg-white px-5 py-4 text-sm text-slate-800 shadow-sm outline-none transition focus:border-violet-400 focus:ring-2 focus:ring-violet-100';
 const textAreaBaseClasses = `${inputBaseClasses} min-h-[120px] resize-none`;
 
-function FieldLabel({ title, optional }) {
+function FieldLabel({ title }) {
   return (
     <label className="mb-2 block text-sm font-semibold text-slate-900">
-      {title}{' '}
-      <span className="text-xs font-normal text-slate-500">
-        {optional ? '(opcional)' : '(obrigatório)'}
-      </span>
+      {title}
     </label>
   );
 }
@@ -85,7 +82,7 @@ export default function CreateIdea() {
 
           <section className="grid gap-5 md:grid-cols-2">
             <div>
-              <FieldLabel title="Como é feito hoje" optional />
+              <FieldLabel title="Como é feito hoje"/>
               <textarea
                 name="current_process"
                 value={form.current_process}
@@ -96,7 +93,7 @@ export default function CreateIdea() {
             </div>
 
             <div>
-              <FieldLabel title="Como pode ser melhorado" optional />
+              <FieldLabel title="Como pode ser melhorado"/>
               <textarea
                 name="proposed_solution"
                 value={form.proposed_solution}
@@ -108,7 +105,7 @@ export default function CreateIdea() {
           </section>
 
           <section>
-            <FieldLabel title="Qual é o benefício" optional />
+            <FieldLabel title="Qual é o benefício"/>
             <textarea
               name="benefit"
               value={form.benefit}
@@ -120,7 +117,7 @@ export default function CreateIdea() {
 
           <section className="flex flex-col gap-4 md:flex-row md:items-center">
             <div className="flex-1">
-              <FieldLabel title="Submitter name" optional />
+              <FieldLabel title="Submitter name"/>
               <input
                 type="text"
                 name="re_author"
