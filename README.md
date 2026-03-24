@@ -122,11 +122,11 @@ Testes realizados via Insomnia:
 
 ### Backend
 
-cd backend npm install npm run dev
+cd ideas-api npm install npm run dev
 
 ### Frontend
 
-cd frontend npm install npm start
+cd ideas-web npm install npm start
 
 ### Banco de Dados
 
